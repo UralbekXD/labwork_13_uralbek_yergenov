@@ -26,3 +26,6 @@ class Product(models.Model):
         choices=CategoryChoices.choices,
         default=CategoryChoices.OTHER
     )
+
+    def __str__(self):
+        return f'{self.title}'

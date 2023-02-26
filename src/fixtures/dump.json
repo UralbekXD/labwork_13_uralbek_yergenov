@@ -1,0 +1,110 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "Macbook Pro",
+        "description": "13 inch Macbook Pro M1 2020",
+        "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-spacegray-select-202206?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1664497359481",
+        "amount": 10,
+        "price": "1299.00",
+        "category": "electronics"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "title": "Apple Watch Ultra",
+        "description": "Apple Watch Ultra 2022",
+        "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQE23ref_VW_34FR+watch-49-titanium-ultra_VW_34FR_WF_CO+watch-face-49-alpine-ultra_VW_34FR_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660713657930%2C1660927566964%2C1660927563656",
+        "amount": 2,
+        "price": "799.00",
+        "category": "electronics"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Banana",
+        "description": "Super Mega Gigantic Popular Cute Galactic Banana",
+        "image": "https://images.immediate.co.uk/production/volatile/sites/30/2017/01/Bunch-of-bananas-67e91d5.jpg?quality=90&webp=true&resize=300,272",
+        "amount": 8,
+        "price": "2.00",
+        "category": "fruits"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "title": "Papaya",
+        "description": "Just Papaya",
+        "image": "https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQfLDH-nQfWJvuzuEXwOXSopsg5T5WF4OxknRLGep4hugstKhvKsGIP_fEIQ6lsNZi6",
+        "amount": 10,
+        "price": "5.00",
+        "category": "fruits"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "title": "Beef",
+        "description": "Cow meat",
+        "image": "https://cross.expert/wp-content/uploads/2019/02/govjadina.jpeg",
+        "amount": 15,
+        "price": "50.00",
+        "category": "meat"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "title": "Chicken",
+        "description": "Chicken meat",
+        "image": "https://www.licious.in/blog/wp-content/uploads/2022/01/Thinly-Sliced-Chicken-Breast-Fillet--750x750.jpg",
+        "amount": 50,
+        "price": "19.99",
+        "category": "meat"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "title": "Coca Cola 0.5L",
+        "description": "500 ml Coca Cola bottle",
+        "image": "https://us.coca-cola.com/content/dam/nagbrands/us/coke/en/home/coca-cola-original-20oz.png",
+        "amount": 100,
+        "price": "4.99",
+        "category": "drinks"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "title": "Coca Cola 355ml",
+        "description": "Coca Cola 355ml Squeeze Can",
+        "image": "https://us.coca-cola.com/store/media/catalog/product/1/6/16181_squeeze-ko-can-maria-2.png?quality=80&fit=bounds&height=750&width=700&canvas=700:750",
+        "amount": 50,
+        "price": "3.99",
+        "category": "drinks"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "title": "Head & Shoulders Classic",
+        "description": "Clean Daily-Use Anti-Dandruff Shampoo, 13.5 Fl Oz (Pack of 2)",
+        "image": "https://m.media-amazon.com/images/I/71FpHXDGZOL._SX466_.jpg",
+        "amount": 100,
+        "price": "24.99",
+        "category": "cosmetics"
+    }
+}
+]

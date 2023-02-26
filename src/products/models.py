@@ -17,9 +17,10 @@ class Product(models.Model):
     description = models.TextField(max_length=2000, null=True, blank=True, verbose_name='Описание товара')
     image = models.URLField(max_length=1024, null=True, blank=True, verbose_name='Фото товара')
     amount = models.PositiveIntegerField(default=0, null=False, blank=False, verbose_name='Остаток')
-    price = models.DecimalField(max_length=7, decimal_places=2, null=False, blank=False)
+    price = models.DecimalField(max_digits=7, decimal_places=2, null=False, blank=False)
 
     category = models.CharField(
+        max_length=256,
         null=False,
         blank=False,
         choices=CategoryChoices.choices,

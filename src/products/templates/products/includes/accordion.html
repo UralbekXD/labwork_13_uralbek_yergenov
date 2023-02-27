@@ -1,0 +1,32 @@
+<div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                Categories
+            </button>
+        </h2>
+
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+             aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {% for category in categories %}
+                        <div class="form-check">
+                            <input class="form-check-input" name="categories" type="checkbox" value="{{ category.0 }}" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                {{ category.1 }}
+                            </label>
+                        </div>
+                    {% endfor %}
+
+                    <div class="btn-group mt-3 w-100 rounded-1" role="group" aria-label="Basic example">
+                        <button type="submit" class="btn btn-sm btn-primary">Искать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,7 +2,8 @@
     <div class="card p-2 shadow-sm rounded-1">
         <img src="{{ product.image }}" class="card-img card-img-top" alt="product img">
         <div class="card-body">
-            <h5 class="card-title text-center mb-4">{{ product.title }}</h5>
+            <h5 class="card-title text-center">{{ product.title }}</h5>
+            <h6 class="card-title text-center mb-4">{{ product.category }}</h6>
             <div class="d-flex justify-content-between">
                 <div class="amount">Цена</div>
                 <div class="price">{{ product.price }}$</div>

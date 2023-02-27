@@ -1,5 +1,12 @@
 from django.shortcuts import render
 
+from ..models import Product
+
 
 def index(request):
-    pass
+    products = Product.objects.filter(amount__gt=0)
+    print(Product.CategoryChoices.choices)
+    return render(request, 'products/index.html', context={
+        'products': products,
+        'categories': Product.CategoryChoices.choices,
+    })

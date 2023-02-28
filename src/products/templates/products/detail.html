@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/product_detail.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="row gy-5 justify-content-center">
+        <div class="col-12 col-lg-8">
+            <div class="card rounded-0 shadow-sm">
+                <div class="card-body">
+                    <div class="wrapper d-flex mb-3">
+                        <img class="image" src="{{ product.image }}" alt="product image">
+                        <div class="info">
+                            <h5 class="card-title">{{ product.title }}</h5>
+                            <h6 class="card-subtitle text-muted mb-3">{{ product.category }}</h6>
+                            <p class="fw-bold">{{ product.price }}$</p>
+                            <p>Amount: {{ product.amount }}</p>
+                        </div>
+                    </div>
+
+                    <h5>Description:</h5>
+                    <div class="card-text">{{ product.description }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

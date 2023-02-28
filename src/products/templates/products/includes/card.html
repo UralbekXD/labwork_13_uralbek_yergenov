@@ -8,7 +8,7 @@
                 <div class="amount">Цена</div>
                 <div class="price">{{ product.price }}$</div>
             </div>
-            <a href="#" class="stretched-link"></a>
+            <a href="{% url 'product_detail' product.pk %}" class="stretched-link"></a>
         </div>
     </div>
 </div>

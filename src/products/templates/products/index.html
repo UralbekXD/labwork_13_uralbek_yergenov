@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="../static/css/card.css">
+    <link rel="stylesheet" href="{% static 'css/card.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -20,7 +20,6 @@
                     {% include 'products/includes/card.html' %}
                 {% endfor %}
             </div>
-
         </div>
     </div>
 {% endblock %}

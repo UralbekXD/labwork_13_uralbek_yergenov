@@ -1,6 +1,11 @@
-<div class="col-12 col-md-6 col-lg-4">
+<div class="col-12 col-md-6 col-lg-6 col-xl-4">
     <div class="card p-2 shadow-sm rounded-1">
-        <img src="{{ product.image }}" class="card-img card-img-top" alt="product img">
+        {% if product.image %}
+            <img src="{{ product.image }}" class="card-img card-img-top" alt="product img">
+        {% else %}
+            <img src="https://via.placeholder.com/250x250" alt="product img" class="card-img card-img-top">
+        {% endif %}
+
         <div class="card-body">
             <h5 class="card-title text-center">{{ product.title }}</h5>
             <h6 class="card-title text-center mb-4">{{ product.category }}</h6>

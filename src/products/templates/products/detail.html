@@ -15,8 +15,12 @@
             <div class="card rounded-0 shadow-sm">
                 <div class="card-body">
                     <div class="wrapper d-flex mb-3">
-                        <img class="image" src="{{ product.image }}" alt="product image">
-                        <div class="info">
+                        {% if product.image %}
+                            <img src="{{ product.image }}" class="image" alt="product img">
+                        {% else %}
+                            <img src="https://via.placeholder.com/250x250" class="image" alt="product img">
+                        {% endif %}
+                        <div class="info ms-3">
                             <h5 class="card-title">{{ product.title }}</h5>
                             <h6 class="card-subtitle text-muted mb-3">{{ product.category }}</h6>
                             <p class="fw-bold">{{ product.price }}$</p>

@@ -11,12 +11,11 @@
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
              aria-labelledby="panelsStayOpen-headingOne">
             <div class="accordion-body">
-                <form action="" method="POST">
-                    {% csrf_token %}
+                <form action="{% url 'category' %}" method="GET">
                     {% for category in categories %}
                         <div class="form-check">
-                            <input class="form-check-input" name="categories" type="checkbox" value="{{ category.0 }}" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
+                            <input class="form-check-input" name="category" type="radio" value="{{ category.0 }}" id="check">
+                            <label class="form-check-label" for="check">
                                 {{ category.1 }}
                             </label>
                         </div>

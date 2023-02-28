@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 
 from ..models import Product
-from ..forms import SearchForm, ProductCreateForm
+from ..forms import SearchForm, ProductForm
 
 
 def product_detail(request, pk):
@@ -26,13 +26,13 @@ def product_search(request):
 def product_create(request):
     match request.method:
         case 'GET':
-            form = ProductCreateForm()
+            form = ProductForm()
             return render(request, 'products/create.html', context={
                 'form': form,
             })
 
         case 'POST':
-            form = ProductCreateForm(request.POST)
+            form = ProductForm(request.POST)
             if not form.is_valid():
                 return render(request, 'products/create.html', context={
                     'form': form,
@@ -40,3 +40,29 @@ def product_create(request):
 
             Product.objects.create(**form.cleaned_data)
             return redirect('index')
+
+
+def product_edit(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    match request.method:
+        case 'GET':
+            form = ProductForm(instance=product)
+            return render(request, 'products/update.html', context={
+                'pk': product.pk,
+                'form': form,
+            })
+
+        case 'POST':
+            form = ProductForm(request.POST)
+            if not form.is_valid():
+                return render(request, 'products/update.html', context={
+                    'form': form,
+                })
+
+            # SUCCESS
+            product.author = form.cleaned_data.get('author')
+            product.email = form.cleaned_data.get('email')
+            product.description = form.cleaned_data.get('description')
+            product.save()
+
+            return redirect('home')

@@ -21,6 +21,11 @@
                             <h6 class="card-subtitle text-muted mb-3">{{ product.category }}</h6>
                             <p class="fw-bold">{{ product.price }}$</p>
                             <p>Amount: {{ product.amount }}</p>
+
+                            <div class="btn-group" role="group">
+                                <a href="{% url 'product_edit' product.pk %}" type="button" class="btn btn-sm btn-warning">Edit</a>
+                                <a href="" type="button" class="btn btn-sm btn-danger">Delete</a>
+                            </div>
                         </div>
                     </div>
 

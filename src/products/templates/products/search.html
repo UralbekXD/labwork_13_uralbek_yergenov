@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    Home
+    Result
 {% endblock %}
 
 {% block extra_css %}
@@ -24,9 +24,13 @@
         </div>
         <div class="col-12 col-lg-9">
             <div class="row g-4">
-                {% for product in products %}
-                    {% include 'products/includes/card.html' %}
-                {% endfor %}
+                {% if products %}
+                    {% for product in products %}
+                        {% include 'products/includes/card.html' %}
+                    {% endfor %}
+                {% else %}
+                    <h2 class="text-center">No result found</h2>
+                {% endif %}
             </div>
         </div>
     </div>

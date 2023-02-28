@@ -24,7 +24,27 @@
 
                             <div class="btn-group" role="group">
                                 <a href="{% url 'product_edit' product.pk %}" type="button" class="btn btn-sm btn-warning">Edit</a>
-                                <a href="" type="button" class="btn btn-sm btn-danger">Delete</a>
+                                <a type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#modal-product">Delete</a>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal-product" tabindex="-1"
+                                 aria-labelledby="modal-product-label"
+                                 aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Delete {{ product.title }}</h1>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to delete it permanently?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                                            <a href="{% url 'product_delete' product.pk %}" class="btn btn-danger">OK</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

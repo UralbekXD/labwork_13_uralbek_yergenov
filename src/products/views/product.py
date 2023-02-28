@@ -60,9 +60,19 @@ def product_edit(request, pk):
                 })
 
             # SUCCESS
-            product.author = form.cleaned_data.get('author')
-            product.email = form.cleaned_data.get('email')
+            product.title = form.cleaned_data.get('title')
+            product.category = form.cleaned_data.get('category')
+            product.price = form.cleaned_data.get('price')
             product.description = form.cleaned_data.get('description')
+            product.image = form.cleaned_data.get('image')
+            product.amount = form.cleaned_data.get('amount')
             product.save()
 
-            return redirect('home')
+            return redirect('index')
+
+
+def product_delete(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    product.delete()
+
+    return redirect('index')

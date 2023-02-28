@@ -12,8 +12,8 @@ def product_detail(request, pk):
 
 
 def product_search(request):
+    form = SearchForm()
     query = request.GET.get('title')
-    form = SearchForm(query)
     result = Product.objects.filter(title__icontains=query)
 
     return render(request, 'products/search.html', context={

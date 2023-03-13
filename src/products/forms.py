@@ -22,26 +22,35 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = ['title', 'category', 'image', 'price', 'amount', 'description']
         widgets = {
-            'title': forms.TextInput(attrs={
-                'class': 'form-control mb-3'
-            }),
+            'title': forms.TextInput(
+                attrs={
+                    'class': 'form-control mb-3'
+                }
+            ),
             'category': forms.Select(
-                choices=Product.CategoryChoices.choices,
                 attrs={
                     'class': 'form-select mb-3'
                 }
             ),
-            'image': forms.TextInput(attrs={
-                'class': 'form-control mb-3'
-            }),
-            'price': forms.NumberInput(attrs={
-                'class': 'form-control mb-3'
-            }),
-            'amount': forms.NumberInput(attrs={
-                'min': 0,
-                'class': 'form-control mb-3'
-            }),
-            'description': forms.Textarea(attrs={
-                'class': 'form-control mb-3'
-            })
+            'image': forms.TextInput(
+                attrs={
+                    'class': 'form-control mb-3'
+                }
+            ),
+            'price': forms.NumberInput(
+                attrs={
+                    'class': 'form-control mb-3'
+                }
+            ),
+            'amount': forms.NumberInput(
+                attrs={
+                    'min': 0,
+                    'class': 'form-control mb-3'
+                }
+            ),
+            'description': forms.Textarea(
+                attrs={
+                    'class': 'form-control mb-3'
+                }
+            )
         }

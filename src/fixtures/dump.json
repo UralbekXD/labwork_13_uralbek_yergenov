@@ -106,5 +106,101 @@
         "price": "24.99",
         "category": "cosmetics"
     }
+},
+{
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "title": "Samsung S23 Ultra",
+        "description": "Технология NFC: Да\r\n    Цвет: зеленый\r\n    Тип экрана: Dynamic AMOLED 2X, HDR10+, Corning Gorilla Glass Victus+\r\n    Диагональ: 6.8 дюйм\r\n    Размер оперативной памяти: 12 ГБ\r\n    Процессор: 8-ядерный Snapdragon 8 Gen 2\r\n    Объем встроенной памяти: 512 ГБ\r\n    Емкость аккумулятора: 5000 мАч",
+        "image": "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h3a/h20/68538744537118/samsung-galaxy-s23-ultra-5g-12-gb-512-gb-zelenyi-108714425-1.jpg",
+        "amount": 100,
+        "price": "1800.00",
+        "category": "electronics"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "title": "Iphone 14 Pro Max",
+        "description": "Технология NFC: Да\r\n    Цвет: фиолетовый\r\n    Тип экрана: OLED, Super Retina XDR display с возможностью постоянной работы\r\n    Диагональ: 6.7 дюйм\r\n    Размер оперативной памяти: 6 ГБ\r\n    Процессор: 6-ядерный Apple A16 Bionic\r\n    Объем встроенной памяти: 256 ГБ\r\n    Емкость аккумулятора: 3095 мАч",
+        "image": "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h00/h18/62948780834846/apple-iphone-14-pro-max-128gb-fioletovyj-106363342-1.jpg",
+        "amount": 50,
+        "price": "1500.00",
+        "category": "electronics"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "title": "Телевизор Samsung",
+        "description": "Тип: QLED-телевизор\r\n    Диагональ: 65 дюйм\r\n    Разрешение: 7680x4320\r\n    Поддержка HD: 8K HDR\r\n    Технология Smart TV: Да\r\n    Wi-Fi: Да\r\n    Входы: HDMI, ,Ethernet (RJ-45), ,USB",
+        "image": "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h06/hf1/32849563320350/samsung-qe65q800tauxce-165-sm-cernyj-100467291-1.jpg",
+        "amount": 10,
+        "price": "6500.00",
+        "category": "electronics"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "title": "Кровать Mod Beds",
+        "description": "Тип: двуспальная\r\n    Спальное место: 180x200 см\r\n    Материал: дерево, ,ДСП, ,ДВП, ,ткань\r\n    Ширина, см: 189\r\n    Длина, см: 209\r\n    Матрас: с матрасом\r\n    Цвет: серый\r\n    Страна: Казахстан",
+        "image": "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h65/h6b/61678278017054/krovat-mod-beds-vertikal-180x200-sm-s-matrasom-seryj-106051867-1.jpg",
+        "amount": 2,
+        "price": "500.00",
+        "category": "other"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+        "title": "Пылесос Deerma DX700 белый",
+        "description": "Тип: вертикальный\r\n    Уборка: сухая\r\n    Тип пылесборника: циклонный фильтр\r\n    Потребляемая мощность: 600 Вт\r\n    Источник питания: сеть\r\n    Цвет: белый",
+        "image": "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hbc/had/48076323553310/deerma-dx700-belyj-3701383-1-Container.jpg",
+        "amount": 10,
+        "price": "50.00",
+        "category": "electronics"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+        "title": "Тостер CENTEK СТ-1432",
+        "description": "Тип управления: механическое\r\n    Количество тостов: 2\r\n    Поддон для крошек: Да\r\n    Материал корпуса: пластик\r\n    Цвет: черный",
+        "image": "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h70/hf3/32725893414942/centek-st-1432-cernyj-100295343-1-Container.jpg",
+        "amount": 5,
+        "price": "20.00",
+        "category": "electronics"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+        "title": "7Up Газированный 1 л",
+        "description": "Тип: газированный напиток\r\n    Без сахара: Нет\r\n    Вкус: лайм, ,лимон\r\n    Страна производства: Казахстан\r\n    Условия хранения: хранить в сухом, прохладном месте при Т от 0 до 35 градусов",
+        "image": "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hc6/h03/51891047333918/7up-gazirovannyj-1-l-100208130-1-Container.jpg",
+        "amount": 1000,
+        "price": "2.00",
+        "category": "drinks"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+        "title": "Наушники Apple AirPods 3",
+        "description": "Тип: гарнитура\r\n    Вид: внутриканальные\r\n    Подключение: беспроводное\r\n    Тип акустического оформления: открытые\r\n    Тип крепления: без крепления\r\n    Система активного шумоподавления: Нет\r\n    Микрофон: Да",
+        "image": "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h12/h12/46719106023454/apple-airpods-3-belyj-102667744-1.jpg",
+        "amount": 9,
+        "price": "100.00",
+        "category": "electronics"
+    }
 }
 ]

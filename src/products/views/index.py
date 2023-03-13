@@ -6,6 +6,7 @@ from ..forms import SearchForm
 
 
 class Index(ListView):
+    paginate_by = 9
     model = Product
     template_name = 'products/index.html'
     context_object_name = 'products'

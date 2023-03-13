@@ -7,7 +7,7 @@
 {% block content %}
     <div class="row gy-5 justify-content-center">
         <div class="col-12 col-sm-8">
-            <form action="{% url 'product_edit' pk %}" method="POST">
+            <form action="{% url 'product_edit' product.pk %}" method="POST">
                 {% include 'products/includes/form.html' with button_text='Edit' %}
             </form>
         </div>

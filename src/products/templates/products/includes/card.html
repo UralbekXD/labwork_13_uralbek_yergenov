@@ -1,12 +1,12 @@
 <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-    <div class="card p-2 shadow-sm rounded-1">
-        {% if product.image %}
-            <img src="{{ product.image }}" class="card-img card-img-top" alt="product img">
-        {% else %}
-            <img src="https://via.placeholder.com/250x250" alt="product img" class="card-img card-img-top">
-        {% endif %}
+    <div class="card border shadow-sm rounded-1">
+        <div class="card-body position-relative">
+            {% if product.image %}
+                <img src="{{ product.image }}" class="card-img card-img-top p-2" alt="product img">
+            {% else %}
+                <img src="https://via.placeholder.com/250x250" alt="product img" class="card-img card-img-top p-2">
+            {% endif %}
 
-        <div class="card-body">
             <h5 class="card-title text-center">{{ product.title }}</h5>
             <h6 class="card-title text-center mb-4">{{ product.category }}</h6>
             <div class="d-flex justify-content-between">
@@ -15,5 +15,13 @@
             </div>
             <a href="{% url 'product_detail' product.pk %}" class="stretched-link"></a>
         </div>
+
+        <div class="card-footer p-0">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary rounded-0 w-100">Add to Cart</button>
+            </form>
+        </div>
+
     </div>
 </div>

@@ -17,7 +17,7 @@
         </div>
 
         <div class="card-footer p-0">
-            <form action="" method="POST">
+            <form action="{% url 'cart_add' product.pk %}" method="POST">
                 {% csrf_token %}
                 <button type="submit" class="btn btn-primary rounded-0 w-100">Add to Cart</button>
             </form>
